@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+    <display-name>Smart Loan</display-name>
+    <welcome-file-list><welcome-file>login.jsp</welcome-file></welcome-file-list>
+    <servlet><servlet-name>DashboardServlet</servlet-name><servlet-class>com.smartloan.web.DashboardServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>DashboardServlet</servlet-name><url-pattern>/dashboard</url-pattern></servlet-mapping>
+    <servlet><servlet-name>LoginServlet</servlet-name><servlet-class>com.smartloan.web.LoginServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>LoginServlet</servlet-name><url-pattern>/login</url-pattern></servlet-mapping>
+    <servlet><servlet-name>LoansServlet</servlet-name><servlet-class>com.smartloan.web.LoansServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>LoansServlet</servlet-name><url-pattern>/loans</url-pattern></servlet-mapping>
+    <servlet><servlet-name>CalculatorServlet</servlet-name><servlet-class>com.smartloan.web.CalculatorServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>CalculatorServlet</servlet-name><url-pattern>/calculator</url-pattern></servlet-mapping>
+    
+    <servlet><servlet-name>LogoutServlet</servlet-name><servlet-class>com.smartloan.web.LogoutServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>LogoutServlet</servlet-name><url-pattern>/logout</url-pattern></servlet-mapping>
+    
+    <!-- New Master Servlets -->
+    <servlet><servlet-name>RegisterServlet</servlet-name><servlet-class>com.smartloan.web.RegisterServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>RegisterServlet</servlet-name><url-pattern>/register</url-pattern></servlet-mapping>
+    <servlet><servlet-name>ProfileServlet</servlet-name><servlet-class>com.smartloan.web.ProfileServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>ProfileServlet</servlet-name><url-pattern>/profile</url-pattern></servlet-mapping>
+    <servlet><servlet-name>StrategyServlet</servlet-name><servlet-class>com.smartloan.web.StrategyServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>StrategyServlet</servlet-name><url-pattern>/strategy</url-pattern></servlet-mapping>
+    <servlet><servlet-name>SimulatorServlet</servlet-name><servlet-class>com.smartloan.web.SimulatorServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>SimulatorServlet</servlet-name><url-pattern>/simulator</url-pattern></servlet-mapping>
+
+    <servlet><servlet-name>AmortizationServlet</servlet-name><servlet-class>com.smartloan.web.AmortizationServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>AmortizationServlet</servlet-name><url-pattern>/amortization</url-pattern></servlet-mapping>
+    <servlet><servlet-name>PrepaymentServlet</servlet-name><servlet-class>com.smartloan.web.PrepaymentServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>PrepaymentServlet</servlet-name><url-pattern>/prepayment</url-pattern></servlet-mapping>
+    <servlet><servlet-name>RiskServlet</servlet-name><servlet-class>com.smartloan.web.RiskServlet</servlet-class></servlet>
+    <servlet-mapping><servlet-name>RiskServlet</servlet-name><url-pattern>/risk</url-pattern></servlet-mapping>
+</web-app>

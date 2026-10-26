@@ -1,0 +1,4 @@
+target/
+smartloan.db
+*.db-journal
+.DS_Store
